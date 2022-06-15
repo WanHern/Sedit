@@ -1,0 +1,138 @@
+/* Modal ////////////////////////////////////////////////////// */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 5% auto;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-name: openModal;
+    animation-duration: 0.5s;
+}
+
+.closebtn {
+    color: #888;
+    float: right;
+    font-size: 30px;
+}
+
+.closebtn:hover,.closebtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes openModal {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+/* Upvote arrow /////////////////////////////////////////////// */
+
+.upvote {
+    width: 35px;
+    background-color: #e0e0e0;
+}
+
+.not_upvoted {
+    width: 20px;
+    height: 13px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: rgb(167, 167, 167);
+    margin-left: 7px;
+    cursor: pointer;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+
+.not_upvoted:hover {
+    background: rgb(109, 109, 109);
+}
+
+.upvoted {
+    width: 20px;
+    height: 13px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: rgb(224, 69, 8);
+    margin-left: 7px;
+    cursor: pointer;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+
+.upvoted:hover {
+    background: rgb(155, 49, 0);
+}
+
+.num_upvotes {
+    text-align:center;
+    cursor: pointer;
+}
+
+.num_upvotes:hover {
+    color: rgb(224, 69, 8);
+}
+
+/* Form ////////////////////////////////////////////////////////*/
+
+.form {
+    margin-left: 25%;
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+}
+
+/* Buttons /////////////////////////////////////////////////////*/
+
+.button-nav {
+    color: rgb(202, 202, 202);
+    border-color: rgb(202, 202, 202);
+    background-color: rgb(58, 58, 58);
+}
+
+.button-nav:hover {
+    color: rgb(36, 36, 36);
+    border-color: rgb(36, 36, 36);
+    background-color: rgb(202, 202, 202);
+}
+
+.button-submit {
+    color: rgb(219, 69, 0);
+    border-color: rgb(219, 69, 0);
+}
+
+.button-submit:hover {
+    color: rgb(202, 202, 202);
+    border-color: rgb(202, 202, 202);
+    background-color: rgb(219, 69, 0);
+}
+
+/* Comment /////////////////////////////////////////////////////*/
+
+.comment-publicfeed {
+    color: rgb(219, 69, 0);
+}
+
+.comment-userfeed {
+    text-decoration: underline;
+    color: rgb(219, 69, 0);
+    cursor: pointer;
+}
+
+.comment-userfeed:hover {
+    color: rgb(155, 49, 0);
+}

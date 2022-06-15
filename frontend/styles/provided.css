@@ -1,0 +1,133 @@
+/* base styles, feel free to edit */
+:root {
+  --reddit-blue: rgb(223, 241, 255);
+  --reddit-orange: #FF5700;
+  --reddit-grey: rgba(0, 0, 0, 0.0975);
+  --reddit-light-grey:  rgba(0, 0, 0, 0.041);
+  --reddit-bg-color: #2b2b2b;
+  --body-text-size: 12px;
+  --alt-text-color:  rgba(0, 0, 0, 0.65);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--reddit-bg-color);
+  height: 100%;
+  font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer {
+  border-top: 1px solid var(--reddit-grey);
+  padding: 10px;
+  background-color: white;
+  min-height: 50px;
+  text-align: right;
+}
+
+.alt-text {
+  color: var(--alt-text-color);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(58, 58, 58);
+  min-height: 50px;
+  border-bottom: 1px solid var(--reddit-grey);
+}
+
+#logo {
+  color: white;
+  font-size: var(--body-text-size);
+  width: 40px;
+  height: 40px;
+  background-color: var(--reddit-orange);
+  border-radius: 50%;
+}
+
+#logo:hover {
+  background-color: rgb(155, 49, 0);
+}
+
+#search {
+  background-color: rgb(218, 218, 218);
+  font: inherit;
+  font-size: var(--body-text-size);
+  border: none;
+  padding: 7.5px 15px;
+  outline: none;
+  border: 1px solid var(--reddit-grey);
+  border-radius: 4px;
+}
+
+#search::placeholder {
+  letter-spacing: 0.5px;
+  font-size: var(--body-text-size);
+  color: rgb(0, 0, 0);
+}
+
+#search:focus {
+  background-color: white;
+  border-color: var(--reddit-blue);
+}
+
+.button {
+  border: 1px solid var(--reddit-blue);
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 7.5px 15px;
+  font-weight: bold;
+}
+
+.button-secondary {
+  background-color: var(--reddit-blue);
+  color: white;
+}
+
+.banner > *,
+footer > * {
+  margin: 10px 25px;
+}
+
+.nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  margin: auto;
+  padding: 5px;
+  display: inline;
+  list-style-type: none;
+}
+
+#feed {
+  min-width: 500px;
+  max-width: 800px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 0;
+}
+
+.feed-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feed-title {
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Add your styles here */
